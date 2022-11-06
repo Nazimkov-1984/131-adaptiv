@@ -56,7 +56,6 @@ h1 {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    position: relative;
 }
 
 .travel_instagram_row {
@@ -152,7 +151,10 @@ header a:hover {
 
 @media (min-width: 380px) and (max-width: 431px) {
    header  {
-    display: none;
+    width: 100%;
+   }
+   header a {
+    font-size: 10px;
    }
    main {
     width: 100%;
@@ -160,14 +162,18 @@ header a:hover {
    .main {
     width: 100%;
     background: url('./img/mobile/Untitled.png') no-repeat;
+    min-height: 100vh;
    }
    h1 {
-    font-size: 8px;
+    font-size: 26px;
    }
    .main_subtitle {
-    font-size: 8px;
+    font-size: 26px;
    }
    .travel_instagram_row img {
     width: 130px;
+}
+.pictures_row {
+    flex-direction: column;
 }
 }
